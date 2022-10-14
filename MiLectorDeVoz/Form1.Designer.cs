@@ -29,92 +29,115 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAbrir = new System.Windows.Forms.Button();
+            this.btnSpeak = new System.Windows.Forms.Button();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnPausa = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.lbTexto = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.btnAbrir);
+            this.panel1.Controls.Add(this.btnSpeak);
+            this.panel1.Controls.Add(this.btnStop);
+            this.panel1.Controls.Add(this.btnPausa);
+            this.panel1.Controls.Add(this.btnPlay);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 56);
+            this.panel1.Size = new System.Drawing.Size(801, 48);
             this.panel1.TabIndex = 0;
             // 
-            // button5
+            // btnAbrir
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.bandeja_de_entrada;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(310, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(42, 35);
-            this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAbrir.BackColor = System.Drawing.Color.Transparent;
+            this.btnAbrir.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.bandeja_de_entrada;
+            this.btnAbrir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbrir.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.btnAbrir.Location = new System.Drawing.Point(22, 6);
+            this.btnAbrir.Name = "btnAbrir";
+            this.btnAbrir.Size = new System.Drawing.Size(42, 35);
+            this.btnAbrir.TabIndex = 5;
+            this.btnAbrir.UseVisualStyleBackColor = false;
+            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
-            // button4
+            // btnSpeak
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.conversacion;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(234, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(41, 35);
-            this.button4.TabIndex = 4;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSpeak.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpeak.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.conversacion;
+            this.btnSpeak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpeak.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSpeak.Location = new System.Drawing.Point(733, 6);
+            this.btnSpeak.Name = "btnSpeak";
+            this.btnSpeak.Size = new System.Drawing.Size(41, 35);
+            this.btnSpeak.TabIndex = 4;
+            this.btnSpeak.UseVisualStyleBackColor = false;
+            this.btnSpeak.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnStop
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.boton_detener1;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(169, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(38, 35);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnStop.BackColor = System.Drawing.Color.Transparent;
+            this.btnStop.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.boton_detener1;
+            this.btnStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStop.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.btnStop.Location = new System.Drawing.Point(430, 6);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(38, 35);
+            this.btnStop.TabIndex = 3;
+            this.btnStop.UseVisualStyleBackColor = false;
+            this.btnStop.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnPausa
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.boton_de_pausa_de_video;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(101, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 35);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnPausa.BackColor = System.Drawing.Color.Transparent;
+            this.btnPausa.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.boton_de_pausa_de_video;
+            this.btnPausa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPausa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPausa.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPausa.Location = new System.Drawing.Point(372, 6);
+            this.btnPausa.Name = "btnPausa";
+            this.btnPausa.Size = new System.Drawing.Size(36, 35);
+            this.btnPausa.TabIndex = 2;
+            this.btnPausa.UseVisualStyleBackColor = false;
+            this.btnPausa.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnPlay
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.boton_de_play;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(30, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 35);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPlay.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlay.BackgroundImage = global::MiLectorDeVoz.Properties.Resources.boton_de_play;
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.btnPlay.Location = new System.Drawing.Point(311, 6);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(37, 35);
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lbTexto
+            // 
+            this.lbTexto.BackColor = System.Drawing.Color.Lavender;
+            this.lbTexto.Location = new System.Drawing.Point(0, 51);
+            this.lbTexto.Name = "lbTexto";
+            this.lbTexto.Size = new System.Drawing.Size(801, 400);
+            this.lbTexto.TabIndex = 1;
+            this.lbTexto.Text = " Lector de Texto Avanzado";
+            this.lbTexto.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbTexto);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -128,11 +151,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btnPausa;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnSpeak;
+        private System.Windows.Forms.Button btnAbrir;
+        private System.Windows.Forms.Label lbTexto;
     }
 }
 
